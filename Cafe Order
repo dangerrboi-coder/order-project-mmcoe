@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+void displayMenu() {
+    printf("\n--- Order Menu ---\n");
+    printf("1: Pizza\n");
+    printf("2: Burger\n");
+    printf("3: Fries\n");
+    printf("4: Milkshake\n");
+}
+
+int main() {
+    int x;
+
+    displayMenu();
+
+    printf("Enter Order Number: ");
+    scanf("%d", &x);
+
+    switch(x) {
+        case 1:
+            printf("Order Confirmed: Pizza.\n");
+            break;
+
+        case 2:
+            printf("Order Confirmed: Burger.\n");
+            break;
+
+        case 3:
+            printf("Order Confirmed: Fries.\n");
+            break;
+
+        case 4:
+            printf("Order Confirmed: Milkshake.\n");
+            break;
+
+        default:
+            printf("Please Re-enter The Order Number.\n");
+    }
+    
+    return 0;
+}
